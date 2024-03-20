@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="vi" class="light-mode">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <meta charset="utf-8"/>
+    <link rel="profile" href="https://gmpg.org/xfn/11"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>
+        Đặt hàng
+    </title>
+    <meta property="og:locale" content="vi_VN"/>
+    <meta property="og:site_name" content="Luxyry Shopping"/>
+    <link rel="icon" type="image/x-icon" href="https://luxshopping.vn/assets/images/favicon.png"/>
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" media="all"/>
+    <link rel="stylesheet" href="https://luxshopping.vn/assets/bootstrap/css/bootstrap.min.css" media="all"/>
+    <link href="https://luxshopping.vn/assets/css/reboot.css?v=5" rel="stylesheet" media="all"/>
+    <link href="https://luxshopping.vn/assets/css/global.css?v=5" rel="stylesheet" media="all"/>
+    <!-- SEO -->
+
+    <link href="https://luxshopping.vn/assets/css/checkout.css" rel="stylesheet" media="all">
+    <meta name="description"
+          content="Đại lý phân phối trực tiếp các sản phẩm đồng hồ hiệu, đồng hồ Thụy Sỹ, đồng hồ chính hãng, đồng hồ nam hàng hiệu, đồng hồ nữ hàng hiệu, đồng hồ nhập khẩu từ Mỹ, Thụy Sỹ ..."/>
+    <meta property="og:image:type" content="image/png"/>
+    <!-- END SEO -->
+
+    <style>
+        .upperHeader .icon-map-pin {
+            margin-right: 10px;
+        }
+
+        .mobileHeaderIcon button.cart {
+            margin-bottom: 0 !important
+        }
+
+        .radius4 {
+            border-radius: 5rem
+        }
+    </style>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+</head>
+<body class=" mobile-nav-visible">
+<div class="wrapper">
+
+
+    <div class="notification"></div>
+    <header class="main-header header">
+        <a class="skip-content" id="skipToMainContent" href="#mainContent">Skip to Main Content</a>
+        <div class="navigationMobile container text-center">
+            <div class="row middleHeader">
+                <div class="col-md-4 col-xs-4 main-left">
+                    <div class="mobileHeaderIcon">
+                        <button class="mobile-navigation-button pull-left hidden-desktop icon-menu" title="Menu"
+                                aria-label="Menu"></button>
+                        <button class="theme-switch-wrapper theme-switch" title="Switch Mode" aria-label="Switch Mode">
+                            <span class="icon-sun"></span></button>
+                        <button class="icon-telephone" aria-label="Hotline" title="Hotline"></button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 siteLogo">
+                    <a href="/" title="Luxury Shopping" class="header-logo" id="logo"></a>
+                </div>
+                <div class="col-md-4 col-xs-4 main-right">
+                    <div class="mobileHeaderIcon">
+                        <button id="search-trigger" class="search-button icon-magnifier" aria-label="Search Button"
+                                title="Tìm Kiếm"></button>
+                        <button class="header-wishlist icon-heart-o relative hidden-mobile" title="Ưa thích"
+                                data-bs-toggle="offcanvas" data-bs-target="#sidebar-fav" aria-controls="sidebar-fav"
+                                arial-label="Sản phẩm ưa thích">
+                                <span class="counter qty">
+                                    0
+                                </span>
+                        </button>
+                        <button class="cart icon-cart-new relative" aria-label="Giỏ hàng" title="Giỏ hàng"
+                                data-bs-toggle="offcanvas" data-bs-target="#sidebar-cart" aria-controls="sidebar-cart">
+                                <span class="counter qty-cart">
+                                    1</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigationBar navigationBar-desktop hidden-mobile hidden-tablet">
+            <div class="container-fluid">
+                <div class="row relative">
+                    <div class="col-md-12 positionStatic">
+                        <div class="mainNav">
+                            <ul class="rolloverArea">
+                                <li class="desktopMainNavNode has-dropdown">
+                                    <a href="/dong-ho-hieu-nam-nu.aspx" title="Thương Hiệu">Thương hiệu</a>
+                                    <div class="dropdown-nav">
+                                        <div class="container bespoke-dropdown">
+                                            <div class="row">
+                                                <div class="brand-nav-block col-xs-12 col-md-2">
+                                                    <div class="column-header">Thương hiệu nổi bật</div>
+                                                    <div><a href="/dong-ho-chopard-454.aspx">Chopard</a></div>
+                                                    <div><a href="/dong-ho-omega-467.aspx">Omega</a></div>
+                                                    <div><a href="/dong-ho-patek-philippe-489.aspx">Patek Philippe</a>
+                                                    </div>
+                                                    <div><a href="/dong-ho-rolex-457.aspx">Rolex</a></div>
+                                                    <div><a href="/dong-ho-zenith-479.aspx">Zenith</a></div>
+                                                    <div><a href="/dong-ho-vacheron-constantin-519.aspx">Vacheron
+                                                        Constantin</a></div>
+                                                    <div><a href="/dong-ho-bvlgari-517.aspx">Bvlgari</a></div>
+                                                    <div><a href="/dong-ho-cartier-503.aspx">Cartier</a></div>
+                                                    <div><a href="/phu-kien.aspx" title="Phụ kiện đồng hồ">Phụ kiện</a>
+                                                    </div>
+                                                </div>
+                                                <div class="brand-nav-block col-xs-12 col-md-2">
+                                                    <div class="column-header">Thương hiệu A-Z</div>
+                                                    <div class="brand-abc">8</div>
+                                                    <div><a href="/dong-ho-88-rue-du-rhone-492.aspx">88 RUE DU RHONE</a>
+                                                    </div>
+                                                    <div class="brand-abc">B</div>
+                                                    <div><a href="/dong-ho-balmain-527.aspx">Balmain</a></div>
+                                                    <div><a href="/dong-ho-baume--mercier-465.aspx">Baume & Mercier</a>
+                                                    </div>
+                                                    <div><a href="/dong-ho-breguet-507.aspx">Breguet</a></div>
+                                                    <div><a href="/dong-ho-bulova-417.aspx">Bulova</a></div>
+                                                    <div><a href="/dong-ho-bulova-accutron-483.aspx">Bulova Accutron</a>
+                                                    </div>
+                                                    <div><a href="/dong-ho-bulova-accu-swiss-490.aspx">Bulova Accu
+                                                        Swiss</a></div>
+                                                    <div><a href="/dong-ho-bvlgari-517.aspx">BVLGARI</a></div>
+                                                    <div><a href="/dong-ho-burberry-468.aspx">Burberry</a></div>
+                                                    <div class="brand-abc">C</div>
+                                                    <div><a href="/dong-ho-calvin-klein-478.aspx">Calvin Klein</a></div>
+                                                    <div><a href="/dong-ho-cartier-503.aspx">CARTIER</a></div>
+                                                </div>
+                                                <div class="brand-nav-block col-xs-12 col-md-2">
+                                                    <div class="column-header">&nbsp;</div>
+                                                    <div><a href="/dong-ho-chanel-487.aspx">Chanel</a></div>
+                                                    <div><a href="/dong-ho-chopard-454.aspx">Chopard</a></div>
+                                                    <div><a href="/dong-ho-christian-dior-504.aspx">Christian Dior</a>
+                                                    </div>
+                                                    <div><a href="/dong-ho-citizen-419.aspx">Citizen</a></div>
+                                                    <div class="brand-abc">F</div>
+                                                    <div><a href="/dong-ho-franck-muller-494.aspx">FRANCK MULLER</a>
+                                                    </div>
+                                                    <div><a href="/dong-ho-fendi-464.aspx">Fendi</a></div>
+                                                    <div><a href="/dong-ho-frederique-constant-515.aspx">Frederique
+                                                        Constant</a></div>
+                                                    <div><a href="/dong-ho-fossil-422.aspx">Fossil</a></div>
+                                                    <div class="brand-abc">G</div>
+                                                    <div><a href="/dong-ho-gucci-447.aspx">Gucci</a></div>
+                                                    <div><a href="/dong-ho-guess-424.aspx">Guess</a></div>
+                                                    <div><a href="/dong-ho-guess-gc-493.aspx">Guess GC</a></div>
+                                                </div>
+                                                <div class="brand-nav-block col-xs-12 col-md-2">
+                                                    <div class="column-header">&nbsp;</div>
+                                                    <div class="brand-abc">H</div>
+                                                    <div><a href="/dong-ho-hamilton-453.aspx">Hamilton</a></div>
+                                                    <div><a href="/dong-ho-hermes-481.aspx">Hermes</a></div>
+                                                    <div><a href="/dong-ho-hublot-509.aspx">Hublot</a></div>
+                                                    <div class="brand-abc">I</div>
+                                                    <div><a href="/dong-ho-iwc-477.aspx">IWC</a></div>
+                                                    <div class="brand-abc">J</div>
+                                                    <div><a href="/dong-ho-jaeger-lecoultre-512.aspx">Jaeger
+                                                        LeCoultre</a></div>
+                                                    <div class="brand-abc">L</div>
+                                                    <div><a href="/dong-ho-lacoste-459.aspx">Lacoste</a></div>
+                                                    <div><a href="/dong-ho-longines-451.aspx">Longines</a></div>
+                                                    <div class="brand-abc">M</div>
+                                                    <div><a href="/dong-ho-marc-jacobs-425.aspx">Marc Jacobs</a></div>
+                                                    <div><a href="/dong-ho-michael-kors-426.aspx">Michael Kors</a></div>
+                                                    <div><a href="/dong-ho-michele-472.aspx">Michele</a></div>
+                                                    <div><a href="/dong-ho-mido-516.aspx">MIDO</a></div>
+                                                </div>
+                                                <div class="brand-nav-block col-xs-12 col-md-2">
+                                                    <div class="column-header">&nbsp;</div>
+                                                    <div><a href="/dong-ho-montblanc-510.aspx">Montblanc</a></div>
+                                                    <div><a href="/dong-ho-movado-421.aspx">Movado</a></div>
+                                                    <div class="brand-abc">O</div>
+                                                    <div><a href="/dong-ho-omega-467.aspx">Omega</a></div>
+                                                    <div class="brand-abc">P</div>
+                                                    <div><a href="/dong-ho-panerai-506.aspx">Panerai</a></div>
+                                                    <div><a href="/dong-ho-patek-philippe-489.aspx">Patek Philippe</a>
+                                                    </div>
+                                                    <div><a href="/dong-ho-piaget-508.aspx">Piaget</a></div>
+                                                    <div class="brand-abc">S</div>
+                                                    <div><a href="/dong-ho-salvatore-ferragamo-452.aspx">Salvatore
+                                                        Ferragamo</a></div>
+                                                    <div><a href="/dong-ho-seiko-434.aspx">Seiko</a></div>
+                                                    <div><a href="/dong-ho-stuhrling-original-429.aspx">Stuhrling
+                                                        Original</a></div>
+                                                    <div><a href="/dong-ho-swatch-428.aspx">Swatch</a></div>
+                                                    <div><a href="/dong-ho-swarovski-484.aspx">Swarovski</a></div>
+                                                </div>
+                                                <div class="brand-nav-block col-xs-12 col-md-2">
+                                                    <div class="column-header">&nbsp;</div>
+                                                    <div class="brand-abc">R</div>
+                                                    <div><a href="/dong-ho-rado-463.aspx">Rado</a></div>
+                                                    <div><a href="/dong-ho-raymond-weil-462.aspx">Raymond Weil</a></div>
+                                                    <div><a href="/dong-ho-rolex-457.aspx">ROLEX</a></div>
+                                                    <div class="brand-abc">T</div>
+                                                    <div><a href="/dong-ho-tag-heuer-449.aspx">Tag Heuer</a></div>
+                                                    <div><a href="/dong-ho-tissot-476.aspx">Tissot</a></div>
+                                                    <div><a href="/dong-ho-tommy-hilfiger-431.aspx">Tommy Hilfiger</a>
+                                                    </div>
+                                                    <div class="brand-abc">V</div>
+                                                    <div><a href="/dong-ho-vacheron-constantin-519.aspx">Vacheron
+                                                        Constantin</a></div>
+                                                    <div><a href="/dong-ho-versace-446.aspx">Versace</a></div>
+                                                    <div><a href="/dong-ho-versus-by-versace-470.aspx">Versus by
+                                                        Versace</a></div>
+                                                    <div><a href="/dong-ho-victorinox-swiss-army-456.aspx">Victorinox
+                                                        swiss army</a></div>
+                                                    <div class="brand-abc">Z</div>
+                                                    <div><a href="/dong-ho-zenith-479.aspx">Zenith</a></div>
+                                                </div>
+
+                                                <div class="col-xs-12" style="margin-top: 30px !important;">
+                                                    <hr>
+                                                    <a href="/dong-ho-hieu-nam-nu.aspx" class="strong"
+                                                       title="Xem tất cả thương hiệu">Xem tất cả thương hiệu</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/dong-ho-nam.aspx" title="Đồng hồ Nam">Đồng hồ
+                                    Nam</a>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/dong-ho-nu.aspx" title="Đồng hồ Nữ">Đồng hồ
+                                    Nữ</a>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/dong-ho-cap-doi.aspx" title="Đồng hồ cặp đôi">Đồng
+                                    hồ cặp đôi</a>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/dong-ho-hot.aspx" title="Sản phẩm HOT">Sản phẩm
+                                    HOT</a>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/sale.aspx" title="Sale">Sale</a>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/limited.aspx"
+                                                                  title="Limited edition">Limited</a>
+                                </li>
+                                <li class="desktopMainNavNode single_dropdown"><a href="javascript:void()"
+                                                                                  title="Phân loại đồng hồ">Phân loại
+                                    đồng hồ</a>
+                                    <ul class="sub_dropdown">
+                                        <li>
+                                            <a href="/dong-ho-thuy-sy.aspx">Đồng hồ Thụy Sỹ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-nam-thuy-sy.aspx">Đồng hồ nam Thụy Sỹ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-nu-thuy-sy.aspx">Đồng hồ nữ Thụy Sỹ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-co.aspx">Đồng hồ cơ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-co-nam.aspx">Đồng hồ cơ nam</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-co-nu.aspx">Đồng hồ cơ nữ</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-pin.aspx">Đồng hồ pin</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-day-da.aspx">Đồng hồ dây da</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-nam-day-da.aspx">Đồng hồ nam dây da</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-nu-day-da.aspx">Đồng hồ nữ dây da</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-day-kim-loai.aspx">Đồng hồ dây kim loại</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-nam-day-kim-loai.aspx">Đồng hồ nam dây kim loại</a>
+                                        </li>
+                                        <li>
+                                            <a href="/dong-ho-nu-day-kim-loai.aspx">Đồng hồ nữ dây kim loại</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="desktopMainNavNode"><a href="/event.aspx" title="Special Event">Special
+                                    Event</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-navigation" class="relative" style="transform: translateX(-100%);">
+            <div class="mobile-navigation-header">
+                <div class="mobile-logo header-logo" style="margin-left: 10px;">
+                </div>
+            </div>
+            <div class="mobile-navigation-body">
+                <ul class="top-level-menu">
+                    <li class="home-menu">Menu</li>
+                    <li class="has-sub-menu mobileNavNode ">
+                        <a href="javascript:void()">Thương hiệu A-Z <span class="icon-chevron-right"></span></a>
+                        <ul class="sub-menu mobileNavNode">
+                            <li class="back-menu"><span class="icon-arrow-left"></span>Trở lại</li>
+                            <li class="mobileNavNode">
+                                <div class="brand-abc">8</div>
+                                <div><a href="/dong-ho-88-rue-du-rhone-492.aspx">88 RUE DU RHONE</a></div>
+                                <div class="brand-abc">B</div>
+                                <div><a href="/dong-ho-balmain-527.aspx">Balmain</a></div>
+                                <div><a href="/dong-ho-baume--mercier-465.aspx">Baume & Mercier</a></div>
+                                <div><a href="/dong-ho-breguet-507.aspx">Breguet</a></div>
+                                <div><a href="/dong-ho-bulova-417.aspx">Bulova</a></div>
+                                <div><a href="/dong-ho-bulova-accutron-483.aspx">Bulova Accutron</a></div>
+                                <div><a href="/dong-ho-bulova-accu-swiss-490.aspx">Bulova Accu Swiss</a></div>
+                                <div><a href="/dong-ho-bvlgari-517.aspx">BVLGARI</a></div>
+                                <div><a href="/dong-ho-burberry-468.aspx">Burberry</a></div>
+                                <div class="brand-abc">C</div>
+                                <div><a href="/dong-ho-calvin-klein-478.aspx">Calvin Klein</a></div>
+                                <div><a href="/dong-ho-cartier-503.aspx">CARTIER</a></div>
+                                <div><a href="/dong-ho-chanel-487.aspx">Chanel</a></div>
+                                <div><a href="/dong-ho-chopard-454.aspx">Chopard</a></div>
+                                <div><a href="/dong-ho-christian-dior-504.aspx">Christian Dior</a></div>
+                                <div><a href="/dong-ho-citizen-419.aspx">Citizen</a></div>
+                                <div class="brand-abc">F</div>
+                                <div><a href="/dong-ho-franck-muller-494.aspx">FRANCK MULLER</a></div>
+                                <div><a href="/dong-ho-fendi-464.aspx">Fendi</a></div>
+                                <div><a href="/dong-ho-frederique-constant-515.aspx">Frederique Constant</a></div>
+                                <div><a href="/dong-ho-fossil-422.aspx">Fossil</a></div>
+                                <div class="brand-abc">G</div>
+                                <div><a href="/dong-ho-gucci-447.aspx">Gucci</a></div>
+                                <div><a href="/dong-ho-guess-424.aspx">Guess</a></div>
+                                <div><a href="/dong-ho-guess-gc-493.aspx">Guess GC</a></div>
+                                <div class="brand-abc">H</div>
+                                <div><a href="/dong-ho-hamilton-453.aspx">Hamilton</a></div>
+                                <div><a href="/dong-ho-hermes-481.aspx">Hermes</a></div>
+                                <div><a href="/dong-ho-hublot-509.aspx">Hublot</a></div>
+                                <div class="brand-abc">I</div>
+                                <div><a href="/dong-ho-iwc-477.aspx">IWC</a></div>
+                                <div class="brand-abc">J</div>
+                                <div><a href="/dong-ho-jaeger-lecoultre-512.aspx">Jaeger LeCoultre</a></div>
+                                <div class="brand-abc">L</div>
+                                <div><a href="/dong-ho-lacoste-459.aspx">Lacoste</a></div>
+                                <div><a href="/dong-ho-longines-451.aspx">Longines</a></div>
+                                <div class="brand-abc">M</div>
+                                <div><a href="/dong-ho-marc-jacobs-425.aspx">Marc Jacobs</a></div>
+                                <div><a href="/dong-ho-michael-kors-426.aspx">Michael Kors</a></div>
+                                <div><a href="/dong-ho-michele-472.aspx">Michele</a></div>
+                                <div><a href="/dong-ho-mido-516.aspx">MIDO</a></div>
+                                <div><a href="/dong-ho-montblanc-510.aspx">Montblanc</a></div>
+                                <div><a href="/dong-ho-movado-421.aspx">Movado</a></div>
+                                <div class="brand-abc">O</div>
+                                <div><a href="/dong-ho-omega-467.aspx">Omega</a></div>
+                                <div class="brand-abc">P</div>
+                                <div><a href="/dong-ho-panerai-506.aspx">Panerai</a></div>
+                                <div><a href="/dong-ho-patek-philippe-489.aspx">Patek Philippe</a></div>
+                                <div><a href="/dong-ho-piaget-508.aspx">Piaget</a></div>
+                                <div class="brand-abc">S</div>
+                                <div><a href="/dong-ho-salvatore-ferragamo-452.aspx">Salvatore Ferragamo</a></div>
+                                <div><a href="/dong-ho-seiko-434.aspx">Seiko</a></div>
+                                <div><a href="/dong-ho-stuhrling-original-429.aspx">Stuhrling Original</a></div>
+                                <div><a href="/dong-ho-swatch-428.aspx">Swatch</a></div>
+                                <div><a href="/dong-ho-swarovski-484.aspx">Swarovski</a></div>
+                                <div class="brand-abc">R</div>
+                                <div><a href="/dong-ho-rado-463.aspx">Rado</a></div>
+                                <div><a href="/dong-ho-raymond-weil-462.aspx">Raymond Weil</a></div>
+                                <div><a href="/dong-ho-rolex-457.aspx">ROLEX</a></div>
+                                <div class="brand-abc">T</div>
+                                <div><a href="/dong-ho-tag-heuer-449.aspx">Tag Heuer</a></div>
+                                <div><a href="/dong-ho-tissot-476.aspx">Tissot</a></div>
+                                <div><a href="/dong-ho-tommy-hilfiger-431.aspx">Tommy Hilfiger</a></div>
+                                <div class="brand-abc">V</div>
+                                <div><a href="/dong-ho-vacheron-constantin-519.aspx">Vacheron Constantin</a></div>
+                                <div><a href="/dong-ho-versace-446.aspx">Versace</a></div>
+                                <div><a href="/dong-ho-versus-by-versace-470.aspx">Versus by Versace</a></div>
+                                <div><a href="/dong-ho-victorinox-swiss-army-456.aspx">Victorinox swiss army</a></div>
+                                <div class="brand-abc">Z</div>
+                                <div><a href="/dong-ho-zenith-479.aspx">Zenith</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobileNavNode "><a href="/dong-ho-nam.aspx" class="mobileNavLink ">Đồng hồ Nam</a>
+                    </li>
+                    <li class="mobileNavNode "><a href="/dong-ho-nu.aspx" class="mobileNavLink ">Đồng hồ Nữ</a>
+                    </li>
+                    <li class="mobileNavNode "><a href="/dong-ho-cap-doi.aspx" class="mobileNavLink ">Đồng hồ cặp
+                        đôi</a>
+                    </li>
+                    <li class="mobileNavNode "><a href="/dong-ho-hot.aspx" class="mobileNavLink ">Sản phẩm HOT</a>
+                    </li>
+                    <li class="has-sub-menu mobileNavNode ">
+                        <a href="javascript:void()">Phân loại đồng hồ <span class="icon-chevron-right"></span></a>
+                        <ul class="sub-menu mobileNavNode">
+                            <li class="back-menu"><span class="icon-arrow-left"></span>Trở lại</li>
+                            <li class="mobileNavNode">
+                                <div>
+                                    <a href="/dong-ho-thuy-sy.aspx">Đồng hồ Thụy Sỹ</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-nam-thuy-sy.aspx">Đồng hồ nam Thụy Sỹ</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-nu-thuy-sy.aspx">Đồng hồ nữ Thụy Sỹ</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-co.aspx">Đồng hồ cơ</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-co-nam.aspx">Đồng hồ cơ nam</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-co-nu.aspx">Đồng hồ cơ nữ</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-pin.aspx">Đồng hồ pin</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-day-da.aspx">Đồng hồ dây da</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-nam-day-da.aspx">Đồng hồ nam dây da</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-nu-day-da.aspx">Đồng hồ nữ dây da</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-day-kim-loai.aspx">Đồng hồ dây kim loại</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-nam-day-kim-loai.aspx">Đồng hồ nam dây kim loại</a>
+                                </div>
+                                <div>
+                                    <a href="/dong-ho-nu-day-kim-loai.aspx">Đồng hồ nữ dây kim loại</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobileNavNode "><a href="/sale.aspx" class="mobileNavLink ">Sale</a>
+                    </li>
+                    <li class="mobileNavNode"><a href="/limited.aspx" class="mobileNavLink ">Limited</a>
+                    </li>
+                    <li class="mobileNavNode "><a href="/event.aspx" class="mobileNavLink ">Special Event</a>
+                    </li>
+                </ul>
+                <div class="help-support bg-gray">
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li class="has-icon">
+                            <button class="header-wishlist" data-bs-toggle="offcanvas" data-bs-target="#sidebar-fav"
+                                    aria-controls="sidebar-fav" arial-label="Sản phẩm ưa thích"><span
+                                    class="icon-heart-o"></span>Ưa thích
+                            </button>
+                        </li>
+                        <li class="has-icon"><a target="_blank"
+                                                href="https://www.google.com/maps/place/Luxury+Shopping/@10.7723277,106.6819033,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x31752ee6fbf50b0d:0xeafd545dc3bb1ea3!2sLuxury+Shopping!8m2!3d10.7723277!4d106.6844836!16s%2Fg%2F1q5bn6c94!3m5!1s0x31752ee6fbf50b0d:0xeafd545dc3bb1ea3!8m2!3d10.7723277!4d106.6844836!16s%2Fg%2F1q5bn6c94?entry=ttu"><span
+                                class="icon-map-pin"></span>Cửa hàng</a>
+                        </li>
+                        <li class="has-icon"><a href="/lien-he.aspx"><span class="icon-calendar-full"></span>Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="mobile-navigation-close icon-cross" title="Close">
+            </button>
+        </div>
+        <div class="end-sticky"></div>
+    </header>
+    <main id="main" class="main-content">
+
+        <div class="container-fluid bg-gray hidden-tablet hidden-mobile">
+            <div class="breadcrumb-section container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" aria-label="Trang chủ">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="Đặt hàng">Đặt hàng</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="checkout-container container mb-60 mt-30">
+            <div class="row gx-5 checkout-step">
+                <form class="checkout-shipping container" data-parsley-validate="">
+                    <div class="row">
+                        <div class="col-12 checkout-header hidden-mobile">
+                            <h1>Thông tin giao hàng</h1>
+                        </div>
+                        <div class="col-sm-12 col-12 col-md-12 col-lg-7 checkout-left">
+                            <div class="row shipping-info form-div">
+                                <div class="col-12 col-md-12 hidden-desktop hidden-tablet uppercase m-ship-title text-center">
+                                    <h2>Thông tin giao hàng</h2>
+                                </div>
+                                <div class="coupon pb-30" style="display: none;">
+                                    <div class="d-flex w-100">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="voucher"
+                                                   placeholder="Mã ưu đãi">
+                                            <label for="voucher">Mã ưu đãi</label>
+                                        </div>
+                                        <div class="sub-button">
+                                            <button id="summit-voucher" type="button"
+                                                    class="submit-button primary-button w-100">Áp dụng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 form-inner">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control name" autocomplete="off" id="fullname"
+                                               name="fullname" placeholder="Tên khách hàng" value=""
+                                               data-parsley-group="block-0">
+                                        <label for="fname">Tên khách hàng</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 form-inner">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control email" autocomplete="on" name="email"
+                                               id="email" placeholder="Địa chỉ email" value=""
+                                               data-parsley-group="block-0">
+                                        <label for="email">Địa chỉ email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 form-inner">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" id="tel" name="tel"
+                                               placeholder="Số điện thoại*" data-parsley-type="number"
+                                               data-parsley-type-message="Số điện thoại không hợp lệ"
+                                               data-parsley-required required
+                                               data-parsley-required-message="Bạn chưa điền số điện thoại"
+                                               data-parsley-pattern="((09|03|07|08|05)+([0-9]{8})\b)"
+                                               data-parsley-pattern-message="Số điện thoại không đúng định dạng">
+                                        <label for="phonenum">Số điện thoại*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 form-inner">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control address" autocomplete="off"
+                                               name="address" id="address" placeholder="Địa chỉ nhận hàng" value=""
+                                               data-parsley-group="block-0">
+                                        <label for="address">Địa chỉ nhận hàng</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 form-inner">
+                                    <div class="form-floating">
+                                        <select class="form-select city" id="city" name="city"
+                                                aria-label="Tỉnh/Thành phố" data-parsley-group="block-0">
+                                            <option selected value="">Vui lòng chọn</option>
+                                            <option value="Thành phố Hồ Chí Minh">TP.HCM</option>
+                                            <option value="Hà Nội">Hà Nội</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                            <option value="An Giang">An Giang</option>
+                                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                                            <option value="Bắc Giang">Bắc Giang</option>
+                                            <option value="Bắc Kạn">Bắc Kạn</option>
+                                            <option value="Bạc Liêu">Bạc Liêu</option>
+                                            <option value="Bắc Ninh">Bắc Ninh</option>
+                                            <option value="Bến Tre">Bến Tre</option>
+                                            <option value="Bình Dương">Bình Dương</option>
+                                            <option value="Bình Phước">Bình Phước</option>
+                                            <option value="Bình Thuận">Bình Thuận</option>
+                                            <option value="Bình Định">Bình Định</option>
+                                            <option value="Cà Mau">Cà Mau</option>
+                                            <option value="Cần Thơ">Cần Thơ</option>
+                                            <option value="Cao Bằng">Cao Bằng</option>
+                                            <option value="Đắk Lắk">Đắk Lắk</option>
+                                            <option value="Đắk Nông">Đắk Nông</option>
+                                            <option value="Điện Biên">Điện Biên</option>
+                                            <option value="Đồng Nai">Đồng Nai</option>
+                                            <option value="Đồng Tháp">Đồng Tháp</option>
+                                            <option value="Gia Lai">Gia Lai</option>
+                                            <option value="Hà Giang">Hà Giang</option>
+                                            <option value="Hà Nam">Hà Nam</option>
+                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                            <option value="Hải Dương">Hải Dương</option>
+                                            <option value="Hải Phòng">Hải Phòng</option>
+                                            <option value="Hậu Giang">Hậu Giang</option>
+                                            <option value="Hòa Bình">Hòa Bình</option>
+                                            <option value="Hưng Yên">Hưng Yên</option>
+                                            <option value="Khánh Hòa">Khánh Hòa</option>
+                                            <option value="Kiên Giang">Kiên Giang</option>
+                                            <option value="Kon Tum">Kon Tum</option>
+                                            <option value="Lai Châu">Lai Châu</option>
+                                            <option value="Lâm Đồng">Lâm Đồng</option>
+                                            <option value="Lạng Sơn">Lạng Sơn</option>
+                                            <option value="Lào Cai">Lào Cai</option>
+                                            <option value="Long An">Long An</option>
+                                            <option value="Nam Định">Nam Định</option>
+                                            <option value="Nghệ An">Nghệ An</option>
+                                            <option value="Ninh Bình">Ninh Bình</option>
+                                            <option value="Ninh Thuận">Ninh Thuận</option>
+                                            <option value="Phú Thọ">Phú Thọ</option>
+                                            <option value="Phú Yên">Phú Yên</option>
+                                            <option value="Quảng Bình">Quảng Bình</option>
+                                            <option value="Quảng Nam">Quảng Nam</option>
+                                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                            <option value="Quảng Ninh">Quảng Ninh</option>
+                                            <option value="Quảng Trị">Quảng Trị</option>
+                                            <option value="Sóc Trăng">Sóc Trăng</option>
+                                            <option value="Sơn La">Sơn La</option>
+                                            <option value="Tây Ninh">Tây Ninh</option>
+                                            <option value="Thái Bình">Thái Bình</option>
+                                            <option value="Thái Nguyên">Thái Nguyên</option>
+                                            <option value="Thanh Hóa">Thanh Hóa</option>
+                                            <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                                            <option value="Tiền Giang">Tiền Giang</option>
+                                            <option value="Trà Vinh">Trà Vinh</option>
+                                            <option value="Tuyên Quang">Tuyên Quang</option>
+                                            <option value="Vĩnh Long">Vĩnh Long</option>
+                                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                            <option value="Yên Bái">Yên Bái</option>
+                                        </select>
+                                        <label for="city">Tỉnh/Thành phố</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-12 form-inner">
+                                    <div class="form-floating">
+                                        <textarea class="form-control note" autocomplete="off" name="ghichu"
+                                                  placeholder="Ghi chú" id="ghichu"
+                                                  data-parsley-group="block-0"></textarea>
+                                        <label for="note">Ghi chú</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 form-inner payment-method">
+                                    <div class="form-check">
+                                        <input class="form-check-input payment2" type="radio" name="payment" id="cod"
+                                               value="2">
+                                        <label class="form-check-label" for="cod">
+                                            Thanh toán khi giao hàng 
+                                        </label>
+                                        <div class="form-check-alert" id="codAlert" style="display: none;">
+                                            <p>
+                                                Giao hàng trên phạm vi toàn quốc.<br>
+                                                Quý khách nhận hàng, kiểm tra và thanh toán thông qua các đối tác vận
+                                                chuyển của Luxury Shopping.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input payment12" type="radio" name="payment"
+                                               id="pay100" value="12">
+                                        <label class="form-check-label" for="pay100">
+                                            Thanh toán Online qua VN-Pay
+                                        </label>
+                                        <div class="form-check-alert" id="pay100Alert" style="display: none;">
+                                            <p>
+                                                Thanh toán trực tiếp tại website Luxury Shopping qua cổng thanh toán
+                                                VN-Pay.
+                                                <br/>
+                                                100% chi phí này sẽ được hoàn trả đầy đủ cho Quý khách nếu phát sinh lỗi
+                                                không mong muốn đối với đơn hàng hoặc sản phẩm không đúng với đơn đặt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 form-inner form-submit-button">
+                                    <button id="submit" type="button" validate
+                                            class="submit-button thanh-toan w-100 primary-button">Đặt hàng
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-12 col-md-12 col-lg-5 checkout-right">
+                            <div class="m-checkout-title hidden-desktop hidden-tablet">
+                                <h2>Thông tin đơn hàng</h2>
+                            </div>
+                            <div class="hidden-tablet hidden-desktop m-next">
+                                <a href="javascript:;" title="Tiếp theo" class="uppercase" id="m-next">Tiếp theo</a>
+                            </div>
+                            <div class="cart bg-gray">
+                                <div class="cart-total">
+
+                                    <div class="cart-items" data-price="6579000" data-product="108782">
+                                        <div class="product-img relative">
+
+                                            <img src="https://cdn.luxshopping.vn/Thumnails/Uploads/News/guess-mens-black-analog-watch-44mm4.png_540_660.webp"
+                                                 width="540" height="660" class="img-fluid" alt="" loading="lazy"/>
+                                            <div class="remove icon-icon-close2"></div>
+                                            <div class="quantity-sl"><span>1</span></div>
+                                        </div>
+                                        <div class="product-title">
+                                            <p class="p-title">Guess Dragon Black Analog Watch 44MM</p>
+                                            <p class="p-sku">MSP: 68728</p>
+
+                                            <div class="quantity-price">
+                                                <div class="quantity d-flex">
+                                                    <button type="button" class="minus"
+                                                            arial-label="Minus Quantity Product">-
+                                                    </button>
+                                                    <input readonly type="text" id="quantity_108782"
+                                                           class="input-number qty" min="1" max="" name="quantity"
+                                                           value="1" inputmode="numeric">
+                                                    <button type="button" class="plus"
+                                                            arial-label="Plus Quantity Product">+
+                                                    </button>
+                                                </div>
+                                                <p class="price" style="display: none;">6,579,000</p>
+                                                <div class="product-line-price">6,579,000</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="totals">
+                                    <div class="totals-item" style="display: none;">
+                                        <div>Subtotal</div>
+                                        <div class="totals-value" id="cart-subtotal"></div>
+                                    </div>
+                                    <div class="totals-item">
+                                        <div>Vận chuyển</div>
+                                        <div class="totals-value">Miễn Phí</div>
+                                    </div>
+                                    <div class="totals-item totals-voucher">
+                                        <div>Mã ưu đãi</div>
+                                        <div class="totals-value" id="cart-voucher"></div>
+                                    </div>
+
+                                    <div class="totals-item totals-item-total">
+                                        <div>Tổng cộng</div>
+                                        <div class="totals-value" id="cart-total"></div>
+                                    </div>
+                                </div>
+                                <div class="pt-30 voucher row hidden-desktop hidden-tablet">
+
+                                    <div class="col-12 col-md-8">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="voucher-mobile"
+                                                   placeholder="Mã ưu đãi">
+                                            <label for="voucher-mobile">Mã ưu đãi</label><span
+                                                class="coupon-note"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <button id="summit-voucher-mobile" type="button"
+                                                class="submit-button primary-button w-100">Áp dụng
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer id="footer" class="footer-wrapper bg-gray">
+        <div class="container">
+            <p>Day la footer</p>
+        </div>
+    </footer>
+
+<div class="modal fade" id="loading" aria-labelledby="Đang tải dữ liệu..." aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <img width="48" src="https://cdn.luxshopping.vn/images/loading.svg" alt="loading"/>
+        </div>
+    </div>
+</div>
+<script defer src="https://luxshopping.vn/assets/bootstrap/js/bootstrap.min.js" id="bootstrap-js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script defer src="https://luxshopping.vn/assets/js/sticksy.min.js" id="sticky-js"></script>
+<script defer src="https://luxshopping.vn/assets/js/main.js?v=9" id="main-js"></script>
+
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '803865627703060');
+    fbq('init', '524701435811884');
+    fbq('track', 'PageView');
+</script>
+
+<!-- Google tag (gtag.js) GA4 -->
+
+<script>
+    window.addEventListener('load', function () {
+        jQuery('[href^="tel:"]').click(function () {
+            gtag('event', 'conversion', {'send_to': 'AW-784395749/IiP5COG498kCEOXbg_YC'});
+        })
+    });
+</script>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT8H5M2"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <img height="1" width="1"
+         src="https://www.facebook.com/tr?id=5559745197442937&ev=PageView
+&noscript=1"/>
+
+</noscript>
+
+<script>
+    dataLayer.push({
+        'dr_event_type': 'add_to_cart',
+        'dr_items': [
+            {
+                'id': '108782',
+                'google_business_vertical': 'retail'
+            }],
+        'dr_value': 6579000,
+        'event': 'dynamic_remarketing'
+    });
+</script>
+
+<script defer src="https://luxshopping.vn/assets/js/checkout.js?v=4"></script>
+<script type="text/jscript">
+    addCode = 0;
+    total = 0;
+    codeValue = 1;
+    totalCart =6579000;
+    var payType = '';
+
+    document.getElementById("sidebar-cart").remove();
+    function explode(delimiter, string, limit) {
+        var emptyArray = {
+            0: ''
+        };
+        if (arguments.length < 2 || typeof arguments[0] == 'undefined' || typeof arguments[1] == 'undefined') {
+            return null;
+        }
+        if (delimiter === '' || delimiter === false || delimiter === null) {
+            return false;
+        }
+
+        if (typeof delimiter == 'function' || typeof delimiter == 'object' || typeof string == 'function' || typeof string == 'object') {
+            return emptyArray;
+        }
+
+        if (delimiter === true) {
+            delimiter = '1';
+        }
+        if (!limit) {
+            return string.toString().split(delimiter.toString());
+        } else {
+            var splitted = string.toString().split(delimiter.toString());
+            var partA = splitted.splice(0, limit - 1);
+            var partB = splitted.join(delimiter.toString());
+            partA.push(partB);
+            return partA;
+        }
+    }
+    function formatNumber(strNumber) {
+        var arStrNumber = explode('.', strNumber, 2);
+        var flag = 1;
+        var strResult = '';
+        var strFist = arStrNumber[0].split('');
+
+        for (i = strFist.length - 1; i >= 0; i--) {
+            if ((flag % 3) == 0 && i != 0) {
+                strResult = ',' + strFist[i] + strResult;
+            } else {
+                strResult = strFist[i] + strResult;
+            }
+            flag++;
+        }
+        if (arStrNumber[1].length > 0) {
+            strResult = strResult + '.' + arStrNumber[1];
+        }
+        return strResult;
+    }
+    function CheckCode() {
+        $.ajax({
+            type: "GET",
+            url: "/CheckCode.ashx?code=" + $('.txtSaleCode').val(),
+            success: function (msg) {
+                console.log(msg);
+                if (msg.val > 0) {
+                    if (msg.type == 2) {
+                        codeValue = msg.val;
+                        $('#total-money').addClass('vnd-sell');
+                        $('.savetext').html('Mã giảm giá ' + formatNumber(codeValue) + ' đ');
+                        $('.cart-save').html(formatNumber((total - codeValue)));
+                        $('.saveval').html(formatNumber(codeValue));
+                    }
+                    else {
+                        codeValue = (100 - msg.val) / 100;
+                        $('#total-money').addClass('vnd-sell');
+                        $('.savetext').html('Mã giảm giá ' + msg.val + '%');
+                        $('.cart-save').html(formatNumber(codeValue * total));
+                        $('.saveval').html(formatNumber(msg.val / 100 * total));
+                    }
+                }
+                else {
+                    $('.savetext').html('Mã giảm giá không hợp lệ!');
+                    $('.cart-save').html(formatNumber(total));
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+            },
+            complete: function () {
+
+            }
+        });
+        return false;
+    }
+
+</script>
+
+<script defer src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Luxury Shopping Vietnam",
+        "alternateName": "Luxury Shopping",
+        "url": "https://luxshopping.vn/",
+        "logo": "https://luxshopping.vn/assets/images/favicon.png",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+8428 3833 9999",
+                "contactType": "sales",
+                "contactOption": "TollFree",
+                "areaServed": "VN"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+8428 3900 8888",
+                "contactType": "customer service",
+                "contactOption": "TollFree",
+                "areaServed": "VN"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/luxshopping.watch/",
+            "https://twitter.com/LuxshoppingVn",
+            "https://www.instagram.com/luxshopping.vn/",
+            "https://www.youtube.com/@luxury.shopping",
+            "https://www.linkedin.com/in/luxshopping/",
+            "https://www.pinterest.com/luxshoppingvn/",
+            "https://vimeo.com/luxshoppingvn",
+            "https://www.tumblr.com/blog/luxshoppingvn",
+            "https://about.me/luxshopping/",
+            "https://luxshoppingvn.blogspot.com/",
+            "https://luxshoppingvn.wordpress.com/"
+        ]
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WholesaleStore",
+        "name": "Luxury Shopping Vietnam",
+        "image": "https://luxshopping.vn/images/logo-mobile.png",
+        "@id": "https://luxshopping.vn/",
+        "url": "https://luxshopping.vn/",
+        "telephone": "028 3833 9999",
+        "priceRange": "250$-200000$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "331 Nguyễn Đình Chiểu, Phường 3, Quận 5",
+            "addressLocality": "Hồ Chí Minh",
+            "postalCode": "700000",
+            "addressCountry": "VN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 10.772487,
+            "longitude": 106.684416
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "21:00"
+        }
+    }
+</script>
+<script async type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'vi',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false,
+            includedLanguages: 'en,fr,zh,de,it,ja,ru,es'
+        }, 'google_translate_element');
+    }
+</script>
+</body>
+</html>
