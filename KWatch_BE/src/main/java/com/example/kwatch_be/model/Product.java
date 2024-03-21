@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -25,6 +24,21 @@ public class Product {
     private String name;
 
     @Column(nullable = false)
+    private String code;
+
+    @Column(nullable = false)
+    private String sex;
+
+    @Column(nullable = false)
+    private String color;
+
+    @Column(nullable = false)
+    private String waterResistant;
+
+    @Column(nullable = false)
+    private String size;
+
+    @Column(nullable = false)
     private double price;
 
     @Column(nullable = false)
@@ -39,9 +53,6 @@ public class Product {
     @Column(name = "is_deleted", nullable = false,columnDefinition = "bit(1) default 0")
     private boolean isDeleted;
 
-    @ManyToOne
-    @JoinColumn(name = "category_detail_id", referencedColumnName = "id")
-    private  CategoryDetail categoryDetail;
 
     @ManyToOne
     @JoinColumn(name = "brand_id",referencedColumnName = "id")
