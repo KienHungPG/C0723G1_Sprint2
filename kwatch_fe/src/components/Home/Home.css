@@ -1,4 +1,35 @@
-.slider_img_intro {
+/* .slider_img_intro {
     width:2000 !important;
     height: 700 !important;
-}
+} */
+.product-card {
+    position: relative;
+    max-width: 300px;
+  }
+  
+  .product-image {
+    height: 200px;
+  }
+  
+  .icon-button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%; /* Mở rộng container theo chiều ngang */
+    padding: 8px;
+  }
+  
+  .material-icons {
+    font-size: 24px;
+    color: black;
+    margin-right: 8px;
+  }
+  
+  .product-content {
+    padding: 16px;
+  }
+  
+  
