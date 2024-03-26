@@ -84,7 +84,7 @@ function Home() {
   return (
     <Layout>
       <MDBRow>
-        <MDBCol md="12">
+        <MDBCol md="12" >
           <CustomCarosel />
         </MDBCol>
       </MDBRow>
@@ -123,7 +123,6 @@ function Home() {
               className="rounded-pill"
               onClick={toggleDrawer(true)}
             >
-              {" "}
               Lọc sản phẩm
             </Button>
           </MDBCol>
@@ -152,7 +151,7 @@ function Home() {
         </Drawer>
         {/* Data  from API: */}
         <div className="row">
-          {filteredProducts.map((product) => (
+          {/* {filteredProducts.map((product) => (
             <Card key={product.productId} sx={{ maxWidth: 300 }}>
               <CardMedia
                 component="img"
@@ -183,7 +182,38 @@ function Home() {
                 </Button>
               </CardActions>
             </Card>
-          ))}
+          ))} */}
+           {/* <Card key={product.productId} sx={{ maxWidth: 300 }}> */}
+           <Card sx={{ maxWidth: 300 }}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="140"
+                src="https://via.placeholder.com/300x200"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  <Link to="/details" className="text-decoration-none">Đồng hồ</Link>
+                </Typography>
+                <Typography variant="body2">
+                  {/* MSP: {product.productCode} */} MSP:123123
+                </Typography>
+                <Typography variant="subtitle2">
+                  {/* {product.productName} */}
+                </Typography>
+                <Typography variant="overline" style={{ color: "#393939" }}>
+                  {/* {formatCurrency(product.productPrice)} */} 123123
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">
+                  <FavoriteBorder />
+                </Button>
+                <Button size="small">
+                  <ShoppingBag />
+                </Button>
+              </CardActions>
+            </Card>
         </div>
       </MDBContainer>
     </Layout>
