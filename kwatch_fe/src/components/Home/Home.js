@@ -19,7 +19,9 @@ import {
   ListItemButton,
   Typography,
 } from "@mui/material";
+
 import { useState, useEffect } from "react";
+
 import { FavoriteBorder, ShoppingBag } from "@mui/icons-material";
 import * as productService from "../../service/ProductService";
 
@@ -79,7 +81,6 @@ function Home() {
     }
     setFilteredProducts(sortedProducts);
   };
-
   return (
     <Layout>
       <MDBRow>
@@ -143,6 +144,7 @@ function Home() {
               ].map((text) => (
                 <ListItem key={text}>
                   <ListItemButton onClick={() => handleFilter(text)}>{text}</ListItemButton>
+
                 </ListItem>
               ))}
             </List>
