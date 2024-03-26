@@ -28,7 +28,9 @@
   width: 200px;
   display: none;
 }
-
+.cart {
+  color: black; /* Đặt màu chữ là màu đen */
+}
 .show-search .search-input {
   display: inline-block;
 }
