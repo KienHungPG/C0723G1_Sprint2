@@ -72,7 +72,9 @@ function Home() {
           </List>
         </Box>
       </Drawer>
-      <Card sx={{ maxWidth: 345 }}>
+      {/* Data  from API: */}
+      <div className="row">
+      <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -98,6 +100,219 @@ function Home() {
         <Button size="small"><ShoppingBag/></Button>
       </CardActions>
     </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    <Card sx={{ maxWidth: 300 }}>
+      <CardMedia
+        component="img"
+        alt="green iguana"
+        height="140"
+        src="https://via.placeholder.com/300x200"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Đồng hồ 
+        </Typography>
+        <Typography variant="body2" >
+        MSP: 102561
+        </Typography>
+        <Typography variant="subtitle2" >
+        Fossil BQ2643SET His and Her Men Watch 45 - 34mm
+        </Typography>
+        <Typography variant="overline" style={{color:'#393939'}}>
+        9,560,000 VNĐ
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small"><FavoriteBorder/></Button>
+        <Button size="small"><ShoppingBag/></Button>
+      </CardActions>
+    </Card>
+    
+      </div>
+      
+   
+    
       </MDBContainer>
     </Layout>
   );
