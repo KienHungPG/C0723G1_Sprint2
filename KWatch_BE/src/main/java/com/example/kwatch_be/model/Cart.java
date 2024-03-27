@@ -34,4 +34,17 @@ public class Cart {
 
     @ManyToOne
     @JoinColumn(name = "product_id",referencedColumnName = "id")
-    private Product product;}
+    private Product product;
+
+    @ManyToOne
+    @JoinColumn(name = "cartStatus_id", referencedColumnName = "id")
+    private CartStatus cartStatus;
+
+    private Double totalPrice;
+    private int statusPayment;
+    private String name;
+    private String address;
+    private String phone;
+    private String email;
+    private String note;
+}

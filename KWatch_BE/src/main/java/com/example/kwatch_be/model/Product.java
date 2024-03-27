@@ -56,6 +56,9 @@ public class Product {
     @Column(name = "is_deleted", nullable = false,columnDefinition = "bit(1) default 0")
     private boolean isDeleted;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id",referencedColumnName = "id")
+    private Category category;
 
     @ManyToOne
     @JoinColumn(name = "brand_id",referencedColumnName = "id")
