@@ -31,8 +31,11 @@ function Home() {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   const formatCurrency = (value) => {
-    return value.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
-  }
+    return value.toLocaleString("vi-VN", {
+      style: "currency",
+      currency: "VND",
+    });
+  };
 
   const toggleDrawer = (inOpen) => (event) => {
     if (
@@ -70,10 +73,14 @@ function Home() {
         sortedProducts.sort((a, b) => b.productPrice - a.productPrice);
         break;
       case "Tên A-Z":
-        sortedProducts.sort((a, b) => a.productName.localeCompare(b.productName));
+        sortedProducts.sort((a, b) =>
+          a.productName.localeCompare(b.productName)
+        );
         break;
       case "Tên Z-A":
-        sortedProducts.sort((a, b) => b.productName.localeCompare(a.productName));
+        sortedProducts.sort((a, b) =>
+          b.productName.localeCompare(a.productName)
+        );
         break;
       default:
         sortedProducts = [...products];
@@ -84,7 +91,7 @@ function Home() {
   return (
     <Layout>
       <MDBRow>
-        <MDBCol md="12" >
+        <MDBCol md="12">
           <CustomCarosel />
         </MDBCol>
       </MDBRow>
@@ -135,23 +142,21 @@ function Home() {
             onKeyDown={toggleDrawer(false)}
           >
             <List>
-              {[
-                "Giá tăng dần",
-                "Giá giảm dần",
-                "Tên A-Z",
-                "Tên Z-A ",
-              ].map((text) => (
-                <ListItem key={text}>
-                  <ListItemButton onClick={() => handleFilter(text)}>{text}</ListItemButton>
-
-                </ListItem>
-              ))}
+              {["Giá tăng dần", "Giá giảm dần", "Tên A-Z", "Tên Z-A "].map(
+                (text) => (
+                  <ListItem key={text}>
+                    <ListItemButton onClick={() => handleFilter(text)}>
+                      {text}
+                    </ListItemButton>
+                  </ListItem>
+                )
+              )}
             </List>
           </Box>
         </Drawer>
         {/* Data  from API: */}
         <div className="row">
-          {/* {filteredProducts.map((product) => (
+          {filteredProducts.map((product) => (
             <Card key={product.productId} sx={{ maxWidth: 300 }}>
               <CardMedia
                 component="img"
@@ -161,7 +166,9 @@ function Home() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Đồng hồ
+                  <Link to="/details" className="text-decoration-none">
+                    Đồng hồ
+                  </Link>
                 </Typography>
                 <Typography variant="body2">
                   MSP: {product.productCode}
@@ -182,38 +189,7 @@ function Home() {
                 </Button>
               </CardActions>
             </Card>
-          ))} */}
-           {/* <Card key={product.productId} sx={{ maxWidth: 300 }}> */}
-           <Card sx={{ maxWidth: 300 }}>
-              <CardMedia
-                component="img"
-                alt="green iguana"
-                height="140"
-                src="https://via.placeholder.com/300x200"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  <Link to="/details" className="text-decoration-none">Đồng hồ</Link>
-                </Typography>
-                <Typography variant="body2">
-                  {/* MSP: {product.productCode} */} MSP:123123
-                </Typography>
-                <Typography variant="subtitle2">
-                  {/* {product.productName} */}
-                </Typography>
-                <Typography variant="overline" style={{ color: "#393939" }}>
-                  {/* {formatCurrency(product.productPrice)} */} 123123
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small">
-                  <FavoriteBorder />
-                </Button>
-                <Button size="small">
-                  <ShoppingBag />
-                </Button>
-              </CardActions>
-            </Card>
+          ))}
         </div>
       </MDBContainer>
     </Layout>

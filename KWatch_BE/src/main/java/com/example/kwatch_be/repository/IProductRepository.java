@@ -14,9 +14,11 @@ public interface IProductRepository extends JpaRepository<Product, Integer> {
             "p.price AS productPrice, p.price_sale AS productPriceSale, " +
             "p.quantity AS productQuantity, p.sex AS productSex, " +
             "p.size AS productSize, p.water_resistant AS productWaterResistant, " +
-            "c.name AS CategoryName, b.name AS brandName " +
+            "p.thumbnail AS productThumbnail, i.file_path AS images, " +
+            "c.name AS categoryName, b.name AS brandName " +
             "FROM product p " +
             "JOIN category c ON c.id = p.category_id " +
+            "JOIN images i ON i.product_id = p.id " +
             "JOIN brand b ON b.id = p.brand_id " +
             "WHERE c.name LIKE :categoryName AND p.name LIKE :productName " +
             "GROUP BY p.id", nativeQuery = true)

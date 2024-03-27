@@ -26,7 +26,4 @@ public class Role {
     @Column(name = "is_deleted", columnDefinition = "bit(1) default 0", nullable = false)
     private boolean isDeleted;
 
-    @JsonBackReference
-    @ManyToMany(mappedBy = "roles")
-    private Set<Account> accounts;
 }

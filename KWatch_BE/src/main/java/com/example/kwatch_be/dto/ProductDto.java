@@ -7,6 +7,7 @@ public interface ProductDto {
     String getProductColor();
     String getProductWaterResistant();
     String getProductSize();
+    String getProductThumbnail();
     Double getProductPrice();
     Double getProductPriceSale();
     String getProductDescription();

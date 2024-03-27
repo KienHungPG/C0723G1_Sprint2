@@ -39,6 +39,9 @@ public class Product {
     private String size;
 
     @Column(nullable = false)
+    private String thumbnail;
+
+    @Column(nullable = false)
     private double price;
 
     @Column(nullable = false)
