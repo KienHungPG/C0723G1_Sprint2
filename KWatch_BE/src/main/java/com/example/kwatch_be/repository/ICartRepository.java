@@ -2,6 +2,8 @@ package com.example.kwatch_be.repository;
 
 import com.example.kwatch_be.model.Cart;
 import jakarta.transaction.Transactional;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -33,4 +35,13 @@ public interface ICartRepository extends JpaRepository<Cart,Integer> {
     @Transactional
     @Query(value = "update cart set quantity = :quantity where cart.id = :id", nativeQuery = true)
     void updateQuantity(@Param("quantity") int quantity, @Param("id") Integer id);
+
+    @Query(value = "select * from cart c\n" +
+            "where c.user_id =  :idUser and c.product_id = :idProduct and c.cart_status_id = 1 ", nativeQuery = true)
+    List<Cart> checkCart(@Param("idUser") Integer id, @Param("idProduct") Integer idAccessory);
+
+    @Query(value = "select * from cart c\n" +
+            "where c.user_id =  :idUser and c.product_id = :idProduct and c.cart_status_id = 1 ", nativeQuery = true)
+    Cart findCartByIdUserAndIdProduct(@Param("idUser") Integer idUser, @Param("idProduct") Integer idProduct);
+
 }

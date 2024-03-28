@@ -14,4 +14,6 @@ public interface ICartService {
     void save(Cart cart);
 
     Cart findById(Integer id);
+    List<Cart> checkCart(Integer idUser, Integer idProduct);
+    Cart findCartByIdAccountAndIdAccessory(Integer idUser, Integer idProduct);
 }

@@ -50,4 +50,14 @@ public class CartService implements ICartService{
     public Cart findById(Integer id) {
         return cartRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public List<Cart> checkCart(Integer idUser, Integer idProduct) {
+        return cartRepository.checkCart(idUser,idProduct);
+    }
+
+    @Override
+    public Cart findCartByIdAccountAndIdAccessory(Integer idUser, Integer idProduct) {
+        return cartRepository.findCartByIdUserAndIdProduct(idUser,idProduct);
+    }
 }
